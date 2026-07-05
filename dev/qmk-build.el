@@ -4,8 +4,9 @@
   "Compile firmware."
   (interactive)
   (let ((default-directory (project-root (project-current))))
-    (compile "qmk compile -kb keychron/v1/ansi -km Duncan_Britt" t)))
-;; qmk config user.keyboard=keychron/v1/ansi
+    (compile "qmk compile -kb keychron/v1/ansi_encoder -km Duncan_Britt" t)))
+
+;; qmk config user.keyboard=keychron/v1/ansi_encoder
 ;; qmk config user.keymap=Duncan_Britt
 
 ;; Tap hold: KC_LEFT_CTRL -> MOD_LCTL
